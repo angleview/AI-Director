@@ -1,0 +1,41 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+
+# 忽略巨大的 PyTorch 原始模型，只传 NCNN 部署模型 (如果 NCNN 模型也不大)
+*.pt
+*.pth
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# Local machine credentials and runtime state
+.local/
+
+# Downloaded benchmark inputs; provenance and checksums remain tracked.
+assets/inputs/*
+!assets/inputs/manifest.json
+assets/replays/*
+!assets/replays/manifest.json
+
+# Generated environments, reports and settings
+.venv*/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+results/
+*.egg-info/
+build/
+dist/

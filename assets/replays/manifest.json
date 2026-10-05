@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "local_filename": "bus-static-3s.avi",
+      "purpose": "Deterministic decode-to-control smoke replay; not a real-motion dataset",
+      "generated_from": "../inputs/bus.jpg",
+      "source_sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "generator": "scripts/make_static_replay.py --frames 30 --fps 10",
+      "sha256": "53c0fd1e04958e0ed77e73333b2c05c644f66efce956d344a43476266c088355",
+      "tracked_in_git": false
+    }
+  ]
+}

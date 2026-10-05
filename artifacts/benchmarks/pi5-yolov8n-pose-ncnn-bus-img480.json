@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-08-07T15:53:24.576793+00:00",
+  "configuration": {
+    "task": "pose",
+    "warmup_runs_excluded": 5,
+    "measured_runs": 30,
+    "imgsz": 480,
+    "confidence": 0.25,
+    "input_scope": "file_decode_through_results"
+  },
+  "artifacts": {
+    "input": {
+      "path": "assets/inputs/bus.jpg",
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "width": 810,
+      "height": 1080,
+      "probe_decode_ms": 6.47284
+    },
+    "model": {
+      "path": "yolov8n-pose_ncnn_model",
+      "files": [
+        {
+          "name": "model.ncnn.param",
+          "bytes": 20049,
+          "sha256": "386d7c5800431655503e9e9182d8fd0a3cb6cb697ee14178e318ff850017f15f"
+        },
+        {
+          "name": "model.ncnn.bin",
+          "bytes": 6860740,
+          "sha256": "a5835bb813fb284f2b18913adb9de28253539219b1f4d7e9d0c04b540850b8e3"
+        },
+        {
+          "name": "metadata.yaml",
+          "bytes": 423,
+          "sha256": "9a437e69eef679f22b3faa30f3fb2a19aedef3b33769d701d721ac1f7119e480"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "hostname": "redacted",
+    "platform": "Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.41",
+    "machine": "aarch64",
+    "cpu": null,
+    "python": "3.13.5",
+    "packages": {
+      "ultralytics": "8.3.232",
+      "ncnn": "1.0.20250916",
+      "opencv-python": "4.12.0.88",
+      "numpy": "2.2.4"
+    }
+  },
+  "setup": {
+    "model_load_ms": 1.657779
+  },
+  "device_health": {
+    "before": {
+      "temperature": "temp=50.5'C",
+      "throttled": "throttled=0x0"
+    },
+    "after": {
+      "temperature": "temp=53.8'C",
+      "throttled": "throttled=0x0"
+    }
+  },
+  "measurements": [
+    {
+      "preprocess_ms": 4.423990998475347,
+      "inference_ms": 42.433818998688366,
+      "postprocess_ms": 1252.6936039939756,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 1,
+      "decode_ms": 6.196417,
+      "predict_wall_ms": 1299.864744,
+      "end_to_end_ms": 1306.072198,
+      "reported_stage_total_ms": 1299.5514139911393,
+      "framework_overhead_ms": 0.31333000886070295
+    },
+    {
+      "preprocess_ms": 4.332436998083722,
+      "inference_ms": 42.221580995828845,
+      "postprocess_ms": 956.6180449983221,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 2,
+      "decode_ms": 5.857014,
+      "predict_wall_ms": 1003.733241,
+      "end_to_end_ms": 1009.597588,
+      "reported_stage_total_ms": 1003.1720629922347,
+      "framework_overhead_ms": 0.5611780077653066
+    },
+    {
+      "preprocess_ms": 4.499898001085967,
+      "inference_ms": 42.35080099897459,
+      "postprocess_ms": 1250.6511639949167,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 3,
+      "decode_ms": 6.237454,
+      "predict_wall_ms": 1297.826508,
+      "end_to_end_ms": 1304.07135,
+      "reported_stage_total_ms": 1297.5018629949773,
+      "framework_overhead_ms": 0.32464500502283045
+    },
+    {
+      "preprocess_ms": 5.04944800195517,
+      "inference_ms": 167.19296999508515,
+      "postprocess_ms": 976.8589849991258,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 4,
+      "decode_ms": 5.855199,
+      "predict_wall_ms": 1149.670248,
+      "end_to_end_ms": 1155.530447,
+      "reported_stage_total_ms": 1149.1014029961661,
+      "framework_overhead_ms": 0.5688450038337578
+    },
+    {
+      "preprocess_ms": 4.293714999221265,
+      "inference_ms": 161.68295399984345,
+      "postprocess_ms": 1249.8271560034482,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 5,
+      "decode_ms": 6.404729,
+      "predict_wall_ms": 1416.135616,
+      "end_to_end_ms": 1422.549328,
+      "reported_stage_total_ms": 1415.803825002513,
+      "framework_overhead_ms": 0.3317909974871327
+    },
+    {
+      "preprocess_ms": 4.319585001212545,
+      "inference_ms": 52.161330000672024,
+      "postprocess_ms": 957.4588350005797,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 6,
+      "decode_ms": 5.851717,
+      "predict_wall_ms": 1014.584243,
+      "end_to_end_ms": 1020.441294,
+      "reported_stage_total_ms": 1013.9397500024643,
+      "framework_overhead_ms": 0.6444929975357354
+    },
+    {
+      "preprocess_ms": 4.454750000149943,
+      "inference_ms": 42.04904600192094,
+      "postprocess_ms": 1254.448350002349,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 7,
+      "decode_ms": 6.264528,
+      "predict_wall_ms": 1301.277384,
+      "end_to_end_ms": 1307.548671,
+      "reported_stage_total_ms": 1300.9521460044198,
+      "framework_overhead_ms": 0.3252379955802098
+    },
+    {
+      "preprocess_ms": 4.19295699975919,
+      "inference_ms": 41.95680600241758,
+      "postprocess_ms": 957.9479429958155,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 8,
+      "decode_ms": 5.806736,
+      "predict_wall_ms": 1004.715013,
+      "end_to_end_ms": 1010.52725,
+      "reported_stage_total_ms": 1004.0977059979923,
+      "framework_overhead_ms": 0.6173070020076921
+    },
+    {
+      "preprocess_ms": 4.53308299620403,
+      "inference_ms": 42.19519299658714,
+      "postprocess_ms": 1253.4874539996963,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 9,
+      "decode_ms": 6.278861,
+      "predict_wall_ms": 1300.539133,
+      "end_to_end_ms": 1306.825401,
+      "reported_stage_total_ms": 1300.2157299924875,
+      "framework_overhead_ms": 0.3234030075125247
+    },
+    {
+      "preprocess_ms": 4.354622004029807,
+      "inference_ms": 41.878343996359035,
+      "postprocess_ms": 959.8649980034679,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 10,
+      "decode_ms": 5.871976,
+      "predict_wall_ms": 1006.724512,
+      "end_to_end_ms": 1012.601803,
+      "reported_stage_total_ms": 1006.0979640038568,
+      "framework_overhead_ms": 0.6265479961432447
+    },
+    {
+      "preprocess_ms": 4.446360995643772,
+      "inference_ms": 42.1024339957512,
+      "postprocess_ms": 1253.2598839970888,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 11,
+      "decode_ms": 6.292602,
+      "predict_wall_ms": 1300.129529,
+      "end_to_end_ms": 1306.429315,
+      "reported_stage_total_ms": 1299.8086789884837,
+      "framework_overhead_ms": 0.3208500115163133
+    },
+    {
+      "preprocess_ms": 4.08992099983152,
+      "inference_ms": 41.74971500469837,
+      "postprocess_ms": 956.4367569983006,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 12,
+      "decode_ms": 5.857254,
+      "predict_wall_ms": 1002.854924,
+      "end_to_end_ms": 1008.717419,
+      "reported_stage_total_ms": 1002.2763930028304,
+      "framework_overhead_ms": 0.5785309971695369
+    },
+    {
+      "preprocess_ms": 4.463935998501256,
+      "inference_ms": 42.17176700331038,
+      "postprocess_ms": 1261.8666859998484,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 13,
+      "decode_ms": 6.133289,
+      "predict_wall_ms": 1308.812237,
+      "end_to_end_ms": 1314.951969,
+      "reported_stage_total_ms": 1308.50238900166,
+      "framework_overhead_ms": 0.3098479983400466
+    },
+    {
+      "preprocess_ms": 4.958781995810568,
+      "inference_ms": 161.02725800010376,
+      "postprocess_ms": 957.4254330000258,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 14,
+      "decode_ms": 5.799884,
+      "predict_wall_ms": 1124.045911,
+      "end_to_end_ms": 1129.851832,
+      "reported_stage_total_ms": 1123.4114729959401,
+      "framework_overhead_ms": 0.6344380040598026
+    },
+    {
+      "preprocess_ms": 4.3407140037743375,
+      "inference_ms": 186.8025830044644,
+      "postprocess_ms": 1253.9649730024394,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 15,
+      "decode_ms": 6.483192,
+      "predict_wall_ms": 1445.434694,
+      "end_to_end_ms": 1451.925071,
+      "reported_stage_total_ms": 1445.108270010678,
+      "framework_overhead_ms": 0.3264239893219383
+    },
+    {
+      "preprocess_ms": 4.3616949988063425,
+      "inference_ms": 42.10485999647062,
+      "postprocess_ms": 956.1442819976946,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 16,
+      "decode_ms": 5.880643,
+      "predict_wall_ms": 1003.262997,
+      "end_to_end_ms": 1009.14938,
+      "reported_stage_total_ms": 1002.6108369929716,
+      "framework_overhead_ms": 0.6521600070284421
+    },
+    {
+      "preprocess_ms": 4.486601996177342,
+      "inference_ms": 42.45359799824655,
+      "postprocess_ms": 1249.8006660025567,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 17,
+      "decode_ms": 6.239546,
+      "predict_wall_ms": 1297.061121,
+      "end_to_end_ms": 1303.30726,
+      "reported_stage_total_ms": 1296.7408659969806,
+      "framework_overhead_ms": 0.32025500301938337
+    },
+    {
+      "preprocess_ms": 4.332528995291796,
+      "inference_ms": 42.175285998382606,
+      "postprocess_ms": 955.992432005587,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 18,
+      "decode_ms": 5.870383,
+      "predict_wall_ms": 1003.121777,
+      "end_to_end_ms": 1008.997161,
+      "reported_stage_total_ms": 1002.5002469992614,
+      "framework_overhead_ms": 0.6215300007385167
+    },
+    {
+      "preprocess_ms": 4.29547400563024,
+      "inference_ms": 41.78408499865327,
+      "postprocess_ms": 1252.8903019992867,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 19,
+      "decode_ms": 6.44197,
+      "predict_wall_ms": 1299.315693,
+      "end_to_end_ms": 1305.765588,
+      "reported_stage_total_ms": 1298.9698610035703,
+      "framework_overhead_ms": 0.3458319964297516
+    },
+    {
+      "preprocess_ms": 4.380418002256192,
+      "inference_ms": 42.00619399489369,
+      "postprocess_ms": 958.1036149975262,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 20,
+      "decode_ms": 5.933142,
+      "predict_wall_ms": 1005.106888,
+      "end_to_end_ms": 1011.045067,
+      "reported_stage_total_ms": 1004.490226994676,
+      "framework_overhead_ms": 0.6166610053239765
+    },
+    {
+      "preprocess_ms": 4.503341995587107,
+      "inference_ms": 42.14615600358229,
+      "postprocess_ms": 1253.3373549958924,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 21,
+      "decode_ms": 6.269917,
+      "predict_wall_ms": 1300.305814,
+      "end_to_end_ms": 1306.582915,
+      "reported_stage_total_ms": 1299.9868529950618,
+      "framework_overhead_ms": 0.3189610049382736
+    },
+    {
+      "preprocess_ms": 4.177622999122832,
+      "inference_ms": 42.43752399634104,
+      "postprocess_ms": 956.3688760026707,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 22,
+      "decode_ms": 5.813662,
+      "predict_wall_ms": 1003.612571,
+      "end_to_end_ms": 1009.432252,
+      "reported_stage_total_ms": 1002.9840229981346,
+      "framework_overhead_ms": 0.628548001865397
+    },
+    {
+      "preprocess_ms": 4.45030599803431,
+      "inference_ms": 42.85012999753235,
+      "postprocess_ms": 1258.3408420032356,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 23,
+      "decode_ms": 6.480952,
+      "predict_wall_ms": 1306.567695,
+      "end_to_end_ms": 1313.056942,
+      "reported_stage_total_ms": 1305.6412779988023,
+      "framework_overhead_ms": 0.9264170011977058
+    },
+    {
+      "preprocess_ms": 4.25575199915329,
+      "inference_ms": 172.9190429978189,
+      "postprocess_ms": 965.1260259997798,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 24,
+      "decode_ms": 5.815829,
+      "predict_wall_ms": 1142.975852,
+      "end_to_end_ms": 1148.798829,
+      "reported_stage_total_ms": 1142.300820996752,
+      "framework_overhead_ms": 0.6750310032480229
+    },
+    {
+      "preprocess_ms": 4.299029002140742,
+      "inference_ms": 110.49876399920322,
+      "postprocess_ms": 1251.416193001205,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 25,
+      "decode_ms": 6.462082,
+      "predict_wall_ms": 1366.54228,
+      "end_to_end_ms": 1373.012102,
+      "reported_stage_total_ms": 1366.213986002549,
+      "framework_overhead_ms": 0.3282939974508281
+    },
+    {
+      "preprocess_ms": 4.300602995499503,
+      "inference_ms": 41.74980799871264,
+      "postprocess_ms": 957.2632390045328,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 26,
+      "decode_ms": 5.813532,
+      "predict_wall_ms": 1003.944607,
+      "end_to_end_ms": 1009.764011,
+      "reported_stage_total_ms": 1003.313649998745,
+      "framework_overhead_ms": 0.6309570012550694
+    },
+    {
+      "preprocess_ms": 4.3343440047465265,
+      "inference_ms": 41.632975997345056,
+      "postprocess_ms": 1252.1733730027336,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 27,
+      "decode_ms": 6.406711,
+      "predict_wall_ms": 1298.493523,
+      "end_to_end_ms": 1304.908271,
+      "reported_stage_total_ms": 1298.1406930048252,
+      "framework_overhead_ms": 0.3528299951749432
+    },
+    {
+      "preprocess_ms": 4.191733998595737,
+      "inference_ms": 41.718254004081246,
+      "postprocess_ms": 956.6106730053434,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 28,
+      "decode_ms": 5.811958,
+      "predict_wall_ms": 1003.164044,
+      "end_to_end_ms": 1008.981668,
+      "reported_stage_total_ms": 1002.5206610080204,
+      "framework_overhead_ms": 0.6433829919795926
+    },
+    {
+      "preprocess_ms": 4.308271003537811,
+      "inference_ms": 41.78223499911837,
+      "postprocess_ms": 1250.8490909967804,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 29,
+      "decode_ms": 6.423952,
+      "predict_wall_ms": 1297.265481,
+      "end_to_end_ms": 1303.697174,
+      "reported_stage_total_ms": 1296.9395969994366,
+      "framework_overhead_ms": 0.3258840005632919
+    },
+    {
+      "preprocess_ms": 4.160085998591967,
+      "inference_ms": 41.778270999202505,
+      "postprocess_ms": 956.9016900059069,
+      "detections": 300,
+      "has_keypoints": true,
+      "run": 30,
+      "decode_ms": 5.803847,
+      "predict_wall_ms": 1003.46469,
+      "end_to_end_ms": 1009.274259,
+      "reported_stage_total_ms": 1002.8400470037013,
+      "framework_overhead_ms": 0.6246429962986895
+    }
+  ],
+  "summary_ms": {
+    "decode_ms": {
+      "count": 30,
+      "min": 5.799884,
+      "max": 6.483192,
+      "mean": 6.0886325999999995,
+      "p50": 6.033215500000001,
+      "p95": 6.4724604999999995,
+      "p99": 6.4825424
+    },
+    "preprocess_ms": {
+      "count": 30,
+      "min": 4.08992099983152,
+      "max": 5.04944800195517,
+      "mean": 4.386400266230339,
+      "p50": 4.337529004260432,
+      "p95": 4.767217445987625,
+      "p99": 5.023154860173236
+    },
+    "inference_ms": {
+      "count": 30,
+      "min": 41.632975997345056,
+      "max": 186.8025830044644,
+      "mean": 66.00045949914299,
+      "p50": 42.17352650084649,
+      "p95": 170.3423101465887,
+      "p99": 182.7763564025372
+    },
+    "postprocess_ms": {
+      "count": 30,
+      "min": 955.992432005587,
+      "max": 1261.8666859998484,
+      "mean": 1106.1376307336711,
+      "p50": 1113.3298255008413,
+      "p95": 1256.5892206028366,
+      "p99": 1260.8441912408307
+    },
+    "reported_stage_total_ms": {
+      "count": 30,
+      "min": 1002.2763930028304,
+      "max": 1445.108270010678,
+      "mean": 1176.5244904990443,
+      "p50": 1222.9211344965734,
+      "p95": 1393.488397452529,
+      "p99": 1436.6099809583102
+    },
+    "framework_overhead_ms": {
+      "count": 30,
+      "min": 0.3098479983400466,
+      "max": 0.9264170011977058,
+      "mean": 0.49394183428895533,
+      "p50": 0.5650115057995322,
+      "p95": 0.6647390549492115,
+      "p99": 0.853515061792298
+    },
+    "predict_wall_ms": {
+      "count": 30,
+      "min": 1002.854924,
+      "max": 1445.434694,
+      "mean": 1177.0184323333333,
+      "p50": 1223.3656845,
+      "p95": 1393.8186147999998,
+      "p99": 1436.9379613800002
+    },
+    "end_to_end_ms": {
+      "count": 30,
+      "min": 1008.717419,
+      "max": 1451.925071,
+      "mean": 1183.1137938333334,
+      "p50": 1229.4188535,
+      "p95": 1400.2575762999998,
+      "p99": 1443.4061055299999
+    }
+  },
+  "metadata_redacted": {
+    "fields": [
+      "environment.hostname",
+      "artifacts.input.path",
+      "artifacts.model.path"
+    ],
+    "measurement_values_unchanged": true
+  }
+}

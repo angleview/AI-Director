@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "model": "YOLOv8n-Pose NCNN",
+  "directory": "yolov8n-pose_ncnn_model",
+  "upstream": "https://github.com/ultralytics/ultralytics",
+  "license": "AGPL-3.0",
+  "upstream_weight": "yolov8n-pose.pt",
+  "upstream_weight_sha256": "c6fa93dd1ee4a2c18c900a45c1d864a1c6f7aba75d84f91648a30b7fb641d212",
+  "input_shape": [640, 640],
+  "export_version": "8.3.225",
+  "files": [
+    {
+      "name": "model.ncnn.param",
+      "bytes": 20049,
+      "sha256": "386d7c5800431655503e9e9182d8fd0a3cb6cb697ee14178e318ff850017f15f"
+    },
+    {
+      "name": "model.ncnn.bin",
+      "bytes": 6860740,
+      "sha256": "a5835bb813fb284f2b18913adb9de28253539219b1f4d7e9d0c04b540850b8e3"
+    },
+    {
+      "name": "metadata.yaml",
+      "bytes": 423,
+      "sha256": "9a437e69eef679f22b3faa30f3fb2a19aedef3b33769d701d721ac1f7119e480"
+    }
+  ],
+  "historical_export_command_available": false
+}

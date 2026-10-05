@@ -1,0 +1,5 @@
+*.sh text eol=lf
+# Preserve exact model bytes so SHA-256 remains valid across platforms.
+yolov8n-pose_ncnn_model/model.ncnn.param -text
+yolov8n-pose_ncnn_model/model.ncnn.bin -text
+yolov8n-pose_ncnn_model/metadata.yaml -text

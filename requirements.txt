@@ -1,0 +1,5 @@
+# Legacy camera/servo prototype profile. For offline inference only,
+# install requirements-inference.txt instead.
+-r requirements-inference.txt
+flask==3.1.1
+adafruit-circuitpython-servokit==1.3.22
